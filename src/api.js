@@ -1,4 +1,4 @@
-export const BASEURL = "http://localhost:8080/calculator/";
+export const BASEURL = "http://localhost:9090/calc/";
 export function callApi(reqmethod, url, data, responseHandler)
 {
     let options = "";
