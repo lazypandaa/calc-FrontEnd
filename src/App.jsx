@@ -12,6 +12,12 @@ class App extends Component {
   add(){
     callApi("GET", BASEURL + `add/${this.state.A}/${this.state.B}`, "", this.getResponse);
   }
+  // 
+ sub(){
+    callApi("GET", BASEURL + ⁠ `sub/${this.state.A}/${this.state.B}` ⁠, "", this.getResponse);
+  }
+// 
+
 
   getResponse(res){
     this.setState({RES: res});
@@ -45,6 +51,7 @@ class App extends Component {
             <tr>
               <td></td>
               <td><button onClick={()=>this.add()}>ADD</button></td>              
+              <td><button onClick={()=>this.sub()}>SUB</button></td>              
             </tr>
           </table>
         </section>
