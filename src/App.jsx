@@ -10,7 +10,7 @@ class App extends Component {
   }
 
   add(){
-    callApi("GET", BASEURL + `add/${this.state.A}/${this.state.B}`, "", this.getResponse);
+    callApi("GET", BASEURL + `sub/${this.state.A}/${this.state.B}`, "", this.getResponse);
   }
   // 
  // sub(){
